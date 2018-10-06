@@ -1,0 +1,14 @@
+Sales report	 06/10/2018 17:27:37
+
+Store IDSales:          Performance
+
+S1                                     500                                             Needs attention
+S2                                    1200                                                    Moderate
+S3                                    1800                                                    Moderate
+S4                                     800                                             Needs attention
+S5                                    2900                                                   Very Good
+S6                                    1900                                                    Moderate
+
+
+Total sales: 9100.
+Average sales: 1516.
