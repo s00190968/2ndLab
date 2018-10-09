@@ -17,11 +17,14 @@ namespace Lab2
         static void Main(string[] args)
         {
             Program p = new Program();
+
+            //1
             Console.WriteLine("\n1.\nChecking for age 17,20 and 30");
             Console.WriteLine("Age 17 has access = " + p.ageIsOkay(17));
             Console.WriteLine("Age 20 has access = " + p.ageIsOkay(20));
             Console.WriteLine("Age 30 has access = " + p.ageIsOkay(30));
 
+            //2
             Console.WriteLine("\n2.\nCost of products:");
             Console.WriteLine("Jeans cost " + p.costOfProduct("Jeans"));
             Console.WriteLine("A jacket costs " + p.costOfProduct("Jacket"));
@@ -30,6 +33,7 @@ namespace Lab2
             Console.WriteLine("Belts cost " + p.costOfProduct("Belt"));
             Console.WriteLine("Socks cost " + p.costOfProduct("Socks"));
 
+            //3
             Console.WriteLine("\n3.\nInt array with all elements initialized to 0. Array size 20");
             int[] arr = { 1 };
             p.zero(arr, 20);
@@ -39,16 +43,24 @@ namespace Lab2
             }
             Console.WriteLine("\n");
 
+            //4
             Console.WriteLine("\n4.\nSum of all even numbers between the two integers 3 and 18.");
             Console.WriteLine("Sum = " + p.Sum(3, 16));
 
+            //5
             Console.WriteLine("\n5.\nStock and sales.");
             Console.WriteLine("Was the stock updated (stock on hand: 50, sales: 12): " + p.stock(50,12));
             Console.WriteLine("Was the stock updated (stock on hand: 10, sales: 18): " + p.stock(10, 18));
 
+            //5
             Console.WriteLine("\n6.\nSales report to a file.");
             p.salesData();
             Console.WriteLine("You can find the report in the specified folder.");
+        }
+
+        public void zero(int[] arr, int size)
+        {
+            arr = new int[size];
         }
 
         public bool ageIsOkay(int age)
@@ -88,11 +100,6 @@ namespace Lab2
                     break;
             }
             return price;
-        }
-
-        public void zero(int[] arr, int size)
-        {
-            arr = new int[size];
         }
 
         public int Sum(int n1, int n2)
